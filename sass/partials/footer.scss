@@ -1,0 +1,259 @@
+.footer-top{
+  width: 100%;
+  height: auto;
+  background: #ecf0f1;
+  border-bottom: 1px solid #cbd0d4;
+  .border-top{
+    position: relative;
+  }
+  .columns{
+    display: block;
+    width: 100%;
+    margin-top: 49px;
+    margin-bottom: 43px;
+    overflow: hidden;
+    @media (min-width: 768px) and (max-width: 1169px) {
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .columns-list{
+      display: block;
+      position: relative;
+      width: 100%;
+      .columns-item{
+        display: block;
+        position: relative;
+        float: left;
+        width: 300px;
+        color: #606366;
+        line-height: 1.5em;
+        @media (min-width: 768px) and (max-width: 1169px) {
+          margin-bottom: 20px;
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+        h4{
+          font-size: 20px;
+          padding-bottom: 22px;
+          font-weight: 300;
+          color: $color-button-h4;
+        }
+      }
+      .about{
+        width: 362px;
+        margin-right: 38px;
+        @media (min-width: 320px) and (max-width: 767px) {
+         width: 100%;
+        }
+      }
+      .contact{
+        width: 441px;
+        margin-right: 59px;
+        .contact-list{
+          position: relative;
+          float: left;
+          @media (min-width: 320px) and (max-width: 767px) {
+            float: none;
+          }
+          .contact-item{
+            display: block;
+            margin-bottom: 10px;
+            width: 215px;
+            height: auto;
+            overflow: hidden;
+          }
+        }
+        .contact-img{
+          display: block;
+          position: relative;
+          float: left;
+          margin-right: 15px;
+          width: 22px;
+          height: 22px;
+          border: 1px solid $sprite-maps;
+          border-radius: 50%;
+          box-sizing: border-box;
+          .icon-phone, .icon-mail-alt, .icon-skype, .icon-location{
+            &:before{
+              display: block;
+              font-size: 13px;
+              color: $sprite-maps;
+              padding-top: 3px;
+              margin: 0 4px;
+            }
+          }
+         }
+        .text{
+          display: block;
+          float: left;
+          width: 178px;
+        }
+        .adds-maps-list{
+          width: 191px;
+          box-sizing: border-box;
+          position: relative;
+          float: right;
+          @media (min-width: 320px) and (max-width: 767px) {
+            float: none;
+          }
+          .adds-item{
+            margin-bottom: 17px;
+            overflow: hidden;
+            .text{
+               width: 154px;
+             }
+          }
+          .maps-item{
+            display: block;
+            position: relative;
+            width: auto;
+            height: auto;
+            .maps{
+              display: inline-block;
+              padding: 3px 0 4px;
+              text-align: center;
+              font-weight: 400;
+              width: 191px;
+              border: 1px solid #bdc3c7;
+              font-size: 14px;
+              cursor: pointer;
+              border-radius: 5px;
+              &:hover{
+                color: $sprite-maps;
+                border: 1px solid $sprite-maps;
+              }
+            }
+          }
+        }
+      }
+      .social{
+        width: 270px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        .icon-container{
+          @media (min-width: 320px) and (max-width: 767px) {
+            padding-left: 5px;
+          }
+          .icon-list{
+            display: inline-block;
+            list-style-type: none;
+            .icon-item{
+              display: inline-block;
+              margin: 0 -2px;
+              .style-icon, .faceebook, .twitter, .gplus, .pinterest, .dribbble, .flickr, .youtube, .vimeo, .instagram, .linkedin{
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                margin: 0 15px 15px 0;
+                background: #ecf0f1;
+                cursor: pointer;
+                border: 1px solid $color-style-icon;
+                border-radius: 100%;
+                box-sizing: border-box;
+                transition: all 0.2s ease-in-out;
+                display: inline-block;
+                color: $color-style-icon;
+                font-size: 18px;
+                padding-top: 6px;
+                [class^="icon-"]:before, [class*=" icon-"]:before {
+                  margin: 0 auto;
+                  vertical-align: middle;
+                }
+                &:hover{
+                    color: #FFFFFF;
+                }
+              }
+              .faceebook{
+                &:hover{
+                  background: $color-fbook;
+                  border: 1px solid $color-fbook;
+                }
+              }
+              .twitter{
+                &:hover{
+                  background: $color-twitter;
+                  border: 1px solid $color-twitter;
+                }
+              }
+              .gplus{
+                &:hover{
+                  background: $color-gplus;
+                  border: 1px solid $color-gplus;
+                }
+              }
+              .pinterest{
+                &:hover{
+                  background: $color-pinterest;
+                  border: 1px solid $color-pinterest;
+                }
+              }
+              .dribbble{
+                margin: 0 0 15px 0;
+                &:hover{
+                  background: $color-dribbble;
+                  border: 1px solid $color-dribbble;
+                }
+              }
+              .flickr{
+                &:hover{
+                  background: $color-flickr;
+                  border: 1px solid $color-flickr;
+                }
+              }
+              .youtube{
+                &:hover{
+                  background: $color-youtube;
+                  border: 1px solid $color-youtube;
+                }
+              }
+              .vimeo{
+                &:hover{
+                  background: $color-vimeo;
+                  border: 1px solid $color-vimeo;
+                }
+              }
+              .instagram{
+                &:hover{
+                  background: $color-instagram;
+                  border: 1px solid #7239c8;
+
+                  @-moz-document url-prefix()
+                  {
+                    background: $ms-color-instagram;
+                    border: 1px solid #7239c8;
+                  }
+
+                }
+              }
+              .linkedin{
+                margin: 0 0 15px 0;
+                &:hover{
+                  background: $color-linkedin;
+                  border: 1px solid $color-linkedin;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer-bottom{
+  width: 100%;
+  height: 70px;
+  background: #e3e7e9;
+  overflow: hidden;
+  .copyright{
+    text-align: center;
+    color: #899096;
+    margin: 28px 0 27px;
+  }
+}

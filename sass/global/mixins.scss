@@ -1,0 +1,9 @@
+@mixin display-position {
+  display: block;
+  position: relative;
+}
+@mixin wh-auto{
+  width: auto;
+  height: auto;
+}
+
